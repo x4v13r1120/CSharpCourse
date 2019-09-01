@@ -1,16 +1,16 @@
-# PythonForEverybody
+# C#Fundamentals
 ### Goals
 
--   Complete the Python for Everybody Specialization
+-   Complete the C#fundamentals course
 
 ### Boundaries / Scope
 
--   Complete Course 1 Programming for Everybody (Getting Started with Python)
--   Complete Course 2 Python Data Structures
+-   Complete part 1 (12 videos)
+-   Complete part 2 (13 videos)
 
 ### Success criteria
 
--   My own application for data retrieval and processing.
+-   My own program written in c#
 -   Weekly work log with screenshots and summaries to demonstrate activity.
 
 ### Constraints
@@ -20,8 +20,8 @@
 ### Assumptions
 
 -   The courses will be available for the duration of the semester.
--   I have all required software.
--   I can skip the Installing and Using Python units.
+-   I have need to dowload required software.
+-   I wont need to pay for the course
 
 ### Stakeholders
 
@@ -33,15 +33,15 @@
 
 Week:
 
-1.  Chapter One - Why we Program? (3 hours)
-2.  Chapter Two: Variables and Expressions (3 hours)
-3.  Chapter Three: Conditional Code (3 hours)
-4.  Chapter Five: Loops and Iteration (3 hours)
-5.  Chapter Four: Functions (2 hours)
-6.  Chapter Seven: Files (3 hours)
-7.  Chapter Eight: Lists (3 hours)
-8.  Chapter Six: Strings (3 hours)
-9.  Chapter Nine: Dictionaries (3 hours)
-10.  Chapter Ten: Tuples (2 hours)
-11.  Graduation and work on independent program (2 hours)
-12.  Complete independent program (2 hours)
+1.  Video 1 Course Introduction/ Video 2 instaling visual studio/ Video 3 Creating your first C# program (2 hours)
+2.  Video 4 Understanding your first c# program/ Video 5 the if decision statment/ Video 6 Understanding data types and variables (3 hours)
+3.  Video 7 for iteration statement/ Video 8 Understanding arrays (3 hours)
+4.  Video 9 Defining and Calling Methods/ Video 10 While iteration statement (3 hours)
+5.  Video 11 Working with dates and times/ Video 12 Working with strings (2 hours)
+6.  Video 13 understanding classes/ Video 14 Understanding Scope and Asscessiblity Modifiers (3 hours)
+7.  Video 15 More about classes and methods/ Video 16 Creating and adding refrences to assemblies (3 hours)
+8.  Video 17 Working with collections/ Video 18 Workign with LINQ (3 hours)
+9.  Video 19 Enumerations and the switch decision statement/ Video 20 Gracefully Handling Exceptions (3 hours)
+10. Video 21 Understanding Events and Event-Driven Programming/ Video 22 Where to go from here (3 hours)
+11. Video 23 Operators,Expressions, and Statements/ Video 24 Working with Code Files,projects and solutions (3 hours)
+12. Video 25 Undertanding Namespaces and Working with the .NET Class Library(2 hours)
