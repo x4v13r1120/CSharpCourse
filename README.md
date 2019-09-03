@@ -45,3 +45,4 @@ Week:
 10. Video 21 Understanding Events and Event-Driven Programming/ Video 22 Where to go from here (3 hours)
 11. Video 23 Operators,Expressions, and Statements/ Video 24 Working with Code Files,projects and solutions (3 hours)
 12. Video 25 Undertanding Namespaces and Working with the .NET Class Library(2 hours)
+
