@@ -10,3 +10,10 @@
                 Console.Write(zigChar);
             }
             Console.ReadLine();
+
+private static string ReverseString(string message)
+        {
+            char[] messageArray = message.ToCharArray();
+            Array.Reverse(messageArray);
+            return String.Concat(messageArray);
+        }
