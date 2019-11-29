@@ -1,0 +1,81 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace LINQ
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<Car> myCars = new List<Car>()
+            {
+                new Car() { VIN="A1", Make = "BMW", Model= "550i", StickerPrice=55000, Year=2012},
+                new Car() { VIN="B2", Make = "Toyota", Model= "4Runner", StickerPrice=35000, Year=2013},
+                new Car() { VIN="C3", Make = "BMW", Model= "745li", StickerPrice=75000, Year=2014},
+                new Car() { VIN="D4", Make = "Ford", Model= "Escape", StickerPrice=25000, Year=2015},
+                new Car() { VIN="E5", Make = "BMW", Model= "55i", StickerPrice=57000, Year=2016}
+            };
+
+            //LINQ query
+            /*
+            var bmws = from car in myCars
+                       where car.Make == "BMW"
+                        && car.Year =2016
+                       select car;
+             */
+
+            /*
+            var orderedCars = from car in myCars
+                              orderby car.Year descending
+                              select car;
+            */
+
+
+
+
+            //LINQ method
+
+            // lambda expression like a mini method
+
+
+            //var bmws = myCars.Where(p => p.Make == "BMW" && p.Year == 2012);
+
+            //var orderedCars = myCars.OrderByDescending(p => p.Year);
+            /*
+            var firstBMW = myCars.OrderByDescending(p=> p.Year).First(p => p.Make == "Bmw");
+            Console.WriteLine(firstBMW.VIN);
+            */
+
+            //Console.WriteLine(myCars.TrueForAll(p => p.Year > 2010));
+
+            //myCars.ForEach(p => p.StickerPrice -= 3000);
+            //myCars.ForEach(p => Console.WriteLine("{0} {1:C}", p.VIN, p.StickerPrice));
+
+            //COnsole.WriteLine(myCars.Exists(p => p.Model == "745li"));
+            //Console.WriteLine(myCars.Sum(p => p.StickerPrice));
+
+            /*
+            foreach (var car in orderedCars)
+            {
+                Console.WriteLine("{0} {1}", car.Year, car.Model, car.VIN);
+            }
+            */
+
+            Console.WriteLine(myCars.GetType());
+            var orderedCars = myCars.OrderByDescending(p => p.Year);
+            Console.WriteLine(orderedCars.GetType());
+
+
+        }
+    }
+    class Car
+    {
+        public string VIN { get; set; }
+        public string Make { get; set; }
+        public string Model { get; set; }
+        public int StickerPrice { get; set; }
+        public int Year { get; set; }
+
+    }
+}
