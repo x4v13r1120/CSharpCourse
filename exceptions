@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Net;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exceptions
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //code defensivly
+            try
+            {
+                string content = File.ReadAllText(@"C:\Lesson22\Example.txt");
+                Console.WriteLine(content);
+
+            }
+            catch (FileNotFoundException ex)
+            {
+                Console.WriteLine("There was a problem!");
+                Console.WriteLine("Make sure the file name is correct");
+            }
+            catch (DirectoryNotFoundException ex)
+            {
+                Console.WriteLine("There was a problem!");
+                Console.WriteLine("Make sure name of directory is correct");
+            }
+
+            catch (Exception ex)
+            {
+                Console.WriteLine("There was a problem!");
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                //Code to finalize 
+                // setting objects to null
+                //closing database connections
+                Console.WriteLine("Closing application now...");
+            }
+            Console.ReadLine();
+        }
+    }
+}
